@@ -54,11 +54,11 @@ public class DiscoveryFragment extends Fragment {
 
     private void bindEvents(View view) {
       //  view.findViewById(R.id.chatRoomOptionItemView).setOnClickListener(v -> chatRoom());
-        view.findViewById(R.id.robotOptionItemView).setOnClickListener(v -> robot());
+      //  view.findViewById(R.id.robotOptionItemView).setOnClickListener(v -> robot());
      //   view.findViewById(R.id.channelOptionItemView).setOnClickListener(v -> channel());
      //   view.findViewById(R.id.cookbookOptionItemView).setOnClickListener(v -> cookbook());
     //    view.findViewById(R.id.momentOptionItemView).setOnClickListener(v -> moment());
-    //    view.findViewById(R.id.conferenceOptionItemView).setOnClickListener(v -> conference());
+          view.findViewById(R.id.conferenceOptionItemView).setOnClickListener(v -> conference());
     }
 
     private void bindViews(View view) {
@@ -85,10 +85,10 @@ public class DiscoveryFragment extends Fragment {
    //     startActivity(intent);
    //  }
 
-    void robot() {
-        Intent intent = ConversationActivity.buildConversationIntent(getActivity(), Conversation.ConversationType.Single, "FireRobot", 0);
-        startActivity(intent);
-    }
+   // void robot() {
+   //     Intent intent = ConversationActivity.buildConversationIntent(getActivity(), Conversation.ConversationType.Single, "FireRobot", 0);
+   //     startActivity(intent);
+   //  }
 
    // void channel() {
    //     Intent intent = new Intent(getActivity(), ChannelListActivity.class);
@@ -117,9 +117,9 @@ public class DiscoveryFragment extends Fragment {
 //        startActivity(intent);
 //    }
 
- //   void conference() {
- //       Intent intent = new Intent(getActivity(), ConferencePortalActivity.class);
- //       startActivity(intent);
- //   }
+   void conference() {
+       Intent intent = new Intent(getActivity(), ConferencePortalActivity.class);
+       startActivity(intent);
+   }
 
 }
