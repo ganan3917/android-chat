@@ -52,7 +52,7 @@
         android:name="cn.wildfire.chat.app.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="MyIm"
+        android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
         android:resizeableActivity="true"
         android:supportsRtl="true"
