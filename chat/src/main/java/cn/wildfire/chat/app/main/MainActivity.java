@@ -365,7 +365,7 @@ public class MainActivity extends WfcBaseActivity {
             switch (item.getItemId()) {
                 case R.id.conversation_list:
                     setCurrentViewPagerItem(0, false);
-                    setTitle("野火");
+                    setTitle("MyIm");
                     if (!isDarkTheme()) {
                         setTitleBackgroundResource(R.color.gray5, false);
                     }
