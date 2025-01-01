@@ -22,9 +22,9 @@ public class AboutActivity extends WfcBaseActivity {
 
     protected void bindEvents() {
         super.bindEvents();
- //        findViewById(R.id.introOptionItemView).setOnClickListener(v -> intro());
- //       findViewById(R.id.agreementOptionItemView).setOnClickListener(v -> agreement());
- //       findViewById(R.id.privacyOptionItemView).setOnClickListener(v -> privacy());
+         findViewById(R.id.introOptionItemView).setOnClickListener(v -> intro());
+        findViewById(R.id.agreementOptionItemView).setOnClickListener(v -> agreement());
+        findViewById(R.id.privacyOptionItemView).setOnClickListener(v -> privacy());
     }
 
     protected void bindViews() {
@@ -64,15 +64,15 @@ public class AboutActivity extends WfcBaseActivity {
         }
     }
 
-  //  public void intro() {
-  //      WfcWebViewActivity.loadUrl(this, "野火IM功能介绍", "https://docs.wildfirechat.cn/");
-  //  }
+    public void intro() {
+        WfcWebViewActivity.loadUrl(this, "功能介绍", "https://www.dwkj.me");
+    }
 
-  //  public void agreement() {
-  //      WfcWebViewActivity.loadUrl(this, "野火IM用户协议", "https://www.wildfirechat.net/wildfirechat_user_agreement.html");
-  //  }
+    public void agreement() {
+       WfcWebViewActivity.loadUrl(this, "用户协议", "https://www.dwkj.me/xieyi.html");
+    }
 
-  //  public void privacy() {
-  //      WfcWebViewActivity.loadUrl(this, "野火IM个人信息保护政策", "https://www.wildfirechat.net/wildfirechat_user_privacy.html");
-  //  }
+    public void privacy() {
+        WfcWebViewActivity.loadUrl(this, "隐私政策", "https://www.dwkj.me/baohu.html");
+    }
 }
