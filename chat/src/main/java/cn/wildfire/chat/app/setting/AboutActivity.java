@@ -37,12 +37,12 @@ public class AboutActivity extends WfcBaseActivity {
         return R.layout.activity_about;
     }
 
-    @Override
-    protected void afterViews() {
-        PackageManager packageManager = getPackageManager();
-        try {
-            PackageInfo packageInfo = packageManager.getPackageInfo(getPackageName(), PackageManager.GET_CONFIGURATIONS);
-            String info = packageInfo.packageName + "\n"
+  //  @Override
+   // protected void afterViews() {
+       // PackageManager packageManager = getPackageManager();
+       // try {
+       //     PackageInfo packageInfo = packageManager.getPackageInfo(getPackageName(), PackageManager.GET_CONFIGURATIONS);
+        //    String info = packageInfo.packageName + "\n"
             //    + packageInfo.versionCode + " " + packageInfo.versionName + "\n"
             //    + ChatManager.Instance().getProtoRevision() + "\n"
             //    + Config.IM_SERVER_HOST + "\n"
@@ -55,14 +55,14 @@ public class AboutActivity extends WfcBaseActivity {
             //    for (String[] ice : Config.ICE_SERVERS) {
             //        info += ice[0] + " " + ice[1] + " " + ice[2] + "\n";
             //    }
-            }
+         //   }
 
-            infoTextView.setText(info);
+       //     infoTextView.setText(info);
 
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
+      //  } catch (PackageManager.NameNotFoundException e) {
+     //       e.printStackTrace();
+     //   }
+   // }
 
   //  public void intro() {
   //      WfcWebViewActivity.loadUrl(this, "野火IM功能介绍", "https://docs.wildfirechat.cn/");
