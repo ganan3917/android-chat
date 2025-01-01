@@ -15,10 +15,10 @@
         android:id="@+id/workspace"
         android:icon="@drawable/bottom_work_menu_selector"
         android:title="工作台" />
-      //  <item
-      //  android:id="@+id/discovery"
-      //  android:icon="@drawable/bottom_discovery_menu_selector"
-      //  android:title="发现" />
+    <item
+       android:id="@+id/discovery"
+       android:icon="@drawable/bottom_discovery_menu_selector"
+       android:title="发现" />
     <item
         android:id="@+id/me"
         android:icon="@drawable/bottom_me_menu_selector"
