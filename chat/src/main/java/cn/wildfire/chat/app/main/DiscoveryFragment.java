@@ -56,7 +56,7 @@ public class DiscoveryFragment extends Fragment {
       //  view.findViewById(R.id.chatRoomOptionItemView).setOnClickListener(v -> chatRoom());
       //  view.findViewById(R.id.robotOptionItemView).setOnClickListener(v -> robot());
      //   view.findViewById(R.id.channelOptionItemView).setOnClickListener(v -> channel());
-     //   view.findViewById(R.id.cookbookOptionItemView).setOnClickListener(v -> cookbook());
+          view.findViewById(R.id.cookbookOptionItemView).setOnClickListener(v -> cookbook());
     //    view.findViewById(R.id.momentOptionItemView).setOnClickListener(v -> moment());
           view.findViewById(R.id.conferenceOptionItemView).setOnClickListener(v -> conference());
     }
@@ -95,9 +95,9 @@ public class DiscoveryFragment extends Fragment {
    //     startActivity(intent);
    // }
 
-  //  void cookbook() {
-  //      WfcWebViewActivity.loadUrl(getContext(), "野火IM开发文档", "https://docs.wildfirechat.cn");
-  //  }
+    void cookbook() {
+        WfcWebViewActivity.loadUrl(getContext(), "官方网站", "https://www.dwkj.me");
+    }
 
 
     private void initMoment() {
