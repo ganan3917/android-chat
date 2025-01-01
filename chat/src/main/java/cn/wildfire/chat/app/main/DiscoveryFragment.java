@@ -53,12 +53,12 @@ public class DiscoveryFragment extends Fragment {
     }
 
     private void bindEvents(View view) {
-        view.findViewById(R.id.chatRoomOptionItemView).setOnClickListener(v -> chatRoom());
+      //  view.findViewById(R.id.chatRoomOptionItemView).setOnClickListener(v -> chatRoom());
         view.findViewById(R.id.robotOptionItemView).setOnClickListener(v -> robot());
-        view.findViewById(R.id.channelOptionItemView).setOnClickListener(v -> channel());
-        view.findViewById(R.id.cookbookOptionItemView).setOnClickListener(v -> cookbook());
-        view.findViewById(R.id.momentOptionItemView).setOnClickListener(v -> moment());
-        view.findViewById(R.id.conferenceOptionItemView).setOnClickListener(v -> conference());
+     //   view.findViewById(R.id.channelOptionItemView).setOnClickListener(v -> channel());
+     //   view.findViewById(R.id.cookbookOptionItemView).setOnClickListener(v -> cookbook());
+    //    view.findViewById(R.id.momentOptionItemView).setOnClickListener(v -> moment());
+    //    view.findViewById(R.id.conferenceOptionItemView).setOnClickListener(v -> conference());
     }
 
     private void bindViews(View view) {
@@ -80,24 +80,24 @@ public class DiscoveryFragment extends Fragment {
         }
     }
 
-    void chatRoom() {
-        Intent intent = new Intent(getActivity(), ChatRoomListActivity.class);
-        startActivity(intent);
-    }
+   // void chatRoom() {
+   //     Intent intent = new Intent(getActivity(), ChatRoomListActivity.class);
+   //     startActivity(intent);
+   //  }
 
     void robot() {
         Intent intent = ConversationActivity.buildConversationIntent(getActivity(), Conversation.ConversationType.Single, "FireRobot", 0);
         startActivity(intent);
     }
 
-    void channel() {
-        Intent intent = new Intent(getActivity(), ChannelListActivity.class);
-        startActivity(intent);
-    }
+   // void channel() {
+   //     Intent intent = new Intent(getActivity(), ChannelListActivity.class);
+   //     startActivity(intent);
+   // }
 
-    void cookbook() {
-        WfcWebViewActivity.loadUrl(getContext(), "野火IM开发文档", "https://docs.wildfirechat.cn");
-    }
+  //  void cookbook() {
+  //      WfcWebViewActivity.loadUrl(getContext(), "野火IM开发文档", "https://docs.wildfirechat.cn");
+  //  }
 
 
     private void initMoment() {
@@ -110,16 +110,16 @@ public class DiscoveryFragment extends Fragment {
         messageViewModel.clearMessageLiveData().observe(getViewLifecycleOwner(), o -> updateMomentBadgeView());
     }
 
-    void moment() {
-        Intent intent = new Intent(WfcIntent.ACTION_MOMENT);
-        // 具体项目中，如果不能隐式启动，可改为下面这种显示启动朋友圈页面
+  //  void moment() {
+  //      Intent intent = new Intent(WfcIntent.ACTION_MOMENT);
+  //      // 具体项目中，如果不能隐式启动，可改为下面这种显示启动朋友圈页面
 //        Intent intent = new Intent(getActivity(), FeedListActivity.class);
-        startActivity(intent);
-    }
+//        startActivity(intent);
+//    }
 
-    void conference() {
-        Intent intent = new Intent(getActivity(), ConferencePortalActivity.class);
-        startActivity(intent);
-    }
+ //   void conference() {
+ //       Intent intent = new Intent(getActivity(), ConferencePortalActivity.class);
+ //       startActivity(intent);
+ //   }
 
 }
