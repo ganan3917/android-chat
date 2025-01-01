@@ -16,7 +16,7 @@ android {
     compileSdkVersion 34
     ndkVersion '18.1.5063045'
     defaultConfig {
-        applicationId "cn.wildfirechat.chat.open"
+        applicationId "cn.wildfirechat.chat.app250101"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 56
