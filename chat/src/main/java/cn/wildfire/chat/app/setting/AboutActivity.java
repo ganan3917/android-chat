@@ -22,9 +22,9 @@ public class AboutActivity extends WfcBaseActivity {
 
     protected void bindEvents() {
         super.bindEvents();
-        findViewById(R.id.introOptionItemView).setOnClickListener(v -> intro());
-        findViewById(R.id.agreementOptionItemView).setOnClickListener(v -> agreement());
-        findViewById(R.id.privacyOptionItemView).setOnClickListener(v -> privacy());
+ //        findViewById(R.id.introOptionItemView).setOnClickListener(v -> intro());
+ //       findViewById(R.id.agreementOptionItemView).setOnClickListener(v -> agreement());
+ //       findViewById(R.id.privacyOptionItemView).setOnClickListener(v -> privacy());
     }
 
     protected void bindViews() {
