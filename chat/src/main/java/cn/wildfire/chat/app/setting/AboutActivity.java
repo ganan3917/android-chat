@@ -64,15 +64,15 @@ public class AboutActivity extends WfcBaseActivity {
         }
     }
 
-    public void intro() {
-        WfcWebViewActivity.loadUrl(this, "野火IM功能介绍", "https://docs.wildfirechat.cn/");
-    }
+  //  public void intro() {
+  //      WfcWebViewActivity.loadUrl(this, "野火IM功能介绍", "https://docs.wildfirechat.cn/");
+  //  }
 
-    public void agreement() {
-        WfcWebViewActivity.loadUrl(this, "野火IM用户协议", "https://www.wildfirechat.net/wildfirechat_user_agreement.html");
-    }
+  //  public void agreement() {
+  //      WfcWebViewActivity.loadUrl(this, "野火IM用户协议", "https://www.wildfirechat.net/wildfirechat_user_agreement.html");
+  //  }
 
-    public void privacy() {
-        WfcWebViewActivity.loadUrl(this, "野火IM个人信息保护政策", "https://www.wildfirechat.net/wildfirechat_user_privacy.html");
-    }
+  //  public void privacy() {
+  //      WfcWebViewActivity.loadUrl(this, "野火IM个人信息保护政策", "https://www.wildfirechat.net/wildfirechat_user_privacy.html");
+  //  }
 }
