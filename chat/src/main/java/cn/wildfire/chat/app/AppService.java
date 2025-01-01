@@ -54,7 +54,7 @@ public class AppService implements AppServiceProvider {
      * <br>
      * <br>
      */
-    public static String APP_SERVER_ADDRESS = "http://192.168.1.206:8888";
+    public static String APP_SERVER_ADDRESS = "https://service.dwkj.me:8888";
 //    public static String APP_SERVER_ADDRESS/*请仔细阅读上面的注释*/ = "https://app.wildfirechat.net";
 
     private AppService() {
